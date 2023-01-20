@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Zumi</string>
+    <string name="sml">I agree to OneScore\'s Terms of Use and Privacy Policy</string>
+    <string name="terms">I agree to <a href='http://www.google.com' >Terms of use</a> and <a href="http://ww.google.com">Privacy Policy </a> of OneScore and <a href="http://ww.google.com"> CIBIL </a></string>
+    <string name="lng">"I agree to OneScore\'s Terms of Use and Privacy Policy authorise to communicate via SMS, Email  WhatsApp. I hereby request for a copy of my Credit Information and/or aggregates on my registered email id or through my OneScore account, and authorise Experian and CIBIL to also provide the same to FPL Technologies Private Limited, on my behalf.</string>
+</resources>

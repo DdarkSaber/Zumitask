@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+<!--    android:background="@mipmap/img"-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/logo"
+       />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Enter Mobile Number"
+        android:textColor="#3844CF"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:layout_margin="1dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="1dp"
+        android:text="Linked to your bank account"
+        android:textColor="#808080"
+        android:textSize="18dp" />
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:layout_marginTop="85dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:background="@drawable/shape"
+       android:orientation="horizontal"
+
+       android:id="@+id/ll1"
+       android:layout_below="@id/subtitle">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+91"
+           android:padding="5dp"
+           android:textColor="@color/black"
+           android:textSize="15dp"
+           android:id="@+id/countrycode"
+           />
+       <EditText
+           android:id="@+id/getusernumber"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@null"
+           android:hint="Enter Mobile number"
+           android:padding="5dp"/>
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <CheckBox
+            android:id="@+id/agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="@string/terms"
+            android:padding="2dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/termsandagreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:text= "@string/sml"
+        android:textColor="#9F9D9D"
+
+        />
+
+    <TextView
+        android:id="@+id/readless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/poweredby"
+        android:layout_below="@id/termsandagreement"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-2dp"
+        android:text="readmore"
+        android:textColor="#3844CF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/getotp"
+        android:id="@+id/poweredby"
+        android:layout_centerHorizontal="true"
+        android:text="Score Powered by"
+        android:textColor="#9E9C9C" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Get otp"
+        android:gravity="center"
+        android:id="@+id/getotp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_margin="8dp"
+        android:enabled="false"
+        android:background="@drawable/shape"
+         />
+
+</RelativeLayout>
